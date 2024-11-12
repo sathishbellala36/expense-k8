@@ -18,7 +18,7 @@ spec:
     metadata:
       labels:
         app: frontend
-        tier: api
+        tier: web
         project: expense
     spec:
       containers:
@@ -34,7 +34,7 @@ spec:
   type: LoadBalancer
   selector:
     app: frontend
-    tier: api
+    tier: web
     project: expense
   ports:
   - name: frontend-port
